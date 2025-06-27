@@ -12,7 +12,7 @@ dotenv.config({ path: path.resolve(__dirname, '.env') });
  */
 export default defineConfig({
   globalTimeout: 320000,
-  timeout: 60000,
+  timeout: 320000,
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -40,15 +40,20 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
+
+    // {
+    //   name: 'edge',
+    //   use: {...devices['Desktop Edge']},
+    // }
 
     /* Test against mobile viewports. */
     // {

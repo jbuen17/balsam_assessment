@@ -17,6 +17,12 @@ export class ProductPage {
 
     }
 
+    /*
+    Author: Joey Buenaventura
+    Method: verifyProductPage
+    Description: To verify that the product page is opened by using the product id and compared the the actual page url
+    Parameters: productID - A string value to be used to compare against the page url
+    */  
     async verifyProductPage(productID: any){
         await this.page.waitForLoadState("load")
         await this.productHeadingTitle.waitFor({state: "visible"})
@@ -25,6 +31,15 @@ export class ProductPage {
         expect(productID == productIDPlaceholder, "Recorded Product ID: " + productID + " is not equal to opened URL with Product ID: " + productIDPlaceholder).toBe(true)
     }    
 
+    /*
+    Author: Joey Buenaventura
+    Method: customizeTreeProduct
+    Description: To set Tree Product customizations
+    Parameters: height
+                shape
+                lights
+                setup
+    */  
     async customizeTreeProduct(height: any, shape: any, lights: any, setup: any){
         await this.page.waitForLoadState("load")
         await this.setHeightCategoryForTree(height)
@@ -49,14 +64,32 @@ export class ProductPage {
         await this.page.locator("//span[text()='" + setup + "']/ancestor::div[@role='radio']").click()
     }
 
+    /*
+    Author: Joey Buenaventura
+    Method: addProductToCart
+    Description: To invoke the Add to Cart Button
+    Parameters: none
+    */  
     async addProductToCart(){
         await this.addToCartButton.click()
     }
 
+    /*
+    Author: Joey Buenaventura
+    Method: viewCart
+    Description: To invoke the View Cart Button
+    Parameters: none
+    */  
     async viewCart(){
         await this.viewCartButton.click()
     }
 
+    /*
+    Author: Joey Buenaventura
+    Method: getProductPriceFromProductPage
+    Description: To retrieve the price of the product selected
+    Parameters: none
+    */  
     async getProductPriceFromProductPage(){
         return await this.productPriceFromProductPage.textContent()
     }
