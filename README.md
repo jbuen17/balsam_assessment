@@ -35,7 +35,8 @@ Open the playwright.config.ts and uncomment the needed browser for testing using
     // }
 
 Use the following command to run the test:
-    **NOTE: you may add --headed on the following command if you wish to see the actual execution on the browser
+    
+**NOTE: you may add --headed on the following command if you wish to see the actual execution on the browser
     
     npx playwright test
 
