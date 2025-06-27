@@ -12,6 +12,7 @@ Make sure to run the following before any execution:
 
 # execution
 Open the playwright.config.ts and uncomment the needed browser for testing using parallel runs. By default, Chrome is set as the base browser for execution.
+
 (I have encountered slow loading issues from the site so I recommend running the test on each browser at a time instead.)
 
     {
