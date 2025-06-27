@@ -1,0 +1,17 @@
+{
+  "name": "balsam",
+  "version": "1.0.0",
+  "description": "test automation framework using playwright and Typescript.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.53.1",
+    "@types/node": "^24.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}
