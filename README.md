@@ -45,6 +45,6 @@ Use the following command to run the test:
 
 # reporting
 
-You may view the eecution report using the command below:
+You may view the execution report using the command below:
 
     npx playwright show-report
