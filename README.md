@@ -7,6 +7,7 @@ Create a local folder and clone using the below git URL:
     https://github.com/jbuen17/balsam_assessment.git
 
 Make sure to run the following before any execution:
+
     npm install
     npm install dotenv --save
 
