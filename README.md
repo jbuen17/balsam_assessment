@@ -2,6 +2,9 @@
 Test automation framework using playwright and Typescript.
 
 # setup
+This repository is public.
+Create a local folder and clone using the below git URL:
+    https://github.com/jbuen17/balsam_assessment.git
 
 Make sure to run the following before any execution:
     npm install
@@ -19,4 +22,4 @@ Use the following command to run the test:
 
 You may view the eecution report using the command below:
 
- npx playwright show-report
+npx playwright show-report
