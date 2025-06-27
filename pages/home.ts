@@ -1,5 +1,4 @@
 import { expect, type Locator, type Page } from '@playwright/test';
-import { buffer } from 'stream/consumers';
 
 export class HomePage {
     readonly page: Page;

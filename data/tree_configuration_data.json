@@ -1,0 +1,9 @@
+ {
+    "tree_config":
+        {
+            "height":"7.5",
+            "shape":"Slim Tree",
+            "lights":"LED Clear Lights",
+            "setup": "Standard"
+        }    
+}
